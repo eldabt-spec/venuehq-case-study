@@ -5,7 +5,7 @@
 
 ## Why isolation was fragile by construction
 
-VenueFlow's server-side code uses the Supabase **service role key**, which bypasses Row Level Security entirely. That means there is no database-level backstop for tenant isolation: every query is responsible for its own `.eq('venue_id', venueId)` filter. A single missing filter is a cross-tenant data leak - the same risk class as a `DELETE` without a `WHERE` clause.
+VenueHQ's server-side code uses the Supabase **service role key**, which bypasses Row Level Security entirely. That means there is no database-level backstop for tenant isolation: every query is responsible for its own `.eq('venue_id', venueId)` filter. A single missing filter is a cross-tenant data leak - the same risk class as a `DELETE` without a `WHERE` clause.
 
 The system had also been built for one venue and retrofitted, so "there's only one venue" assumptions were baked in everywhere.
 

@@ -4,7 +4,7 @@
 
 ## What happened
 
-In July 2026, the automated jobs that pull new customer inquiries into VenueFlow quietly stopped working in production — and stayed broken for two days. No alarm went off. Every test was green. The system didn't even log an error, because the code was crashing before it got far enough to write one. From the business side, it just looked like customers had stopped inquiring.
+In July 2026, the automated jobs that pull new customer inquiries into VenueHQ quietly stopped working in production — and stayed broken for two days. No alarm went off. Every test was green. The system didn't even log an error, because the code was crashing before it got far enough to write one. From the business side, it just looked like customers had stopped inquiring.
 
 ## Why nothing caught it
 

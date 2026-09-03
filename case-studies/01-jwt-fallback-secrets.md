@@ -6,7 +6,7 @@
 
 ## The finding
 
-VenueFlow runs two separate authentication systems: CRM auth for venue team members (`team_session` cookie) and platform auth for super-admins (`platform_session` cookie). Each signs JWTs with its own secret, read from environment variables.
+VenueHQ runs two separate authentication systems: CRM auth for venue team members (`team_session` cookie) and platform auth for super-admins (`platform_session` cookie). Each signs JWTs with its own secret, read from environment variables.
 
 The problem: multiple production files declared those secrets with a hardcoded fallback:
 
