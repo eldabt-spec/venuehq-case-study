@@ -1,6 +1,6 @@
 # The AI QA Workflow
 
-How VenueFlow development runs with an AI coding agent (Claude Code) as the execution layer and a human QA lead as the verification layer. The core stance: **AI output is untrusted until grounded in the actual code.** Everything below exists to enforce that stance mechanically instead of relying on vigilance.
+How VenueHQ development runs with an AI coding agent (Claude Code) as the execution layer and a human QA lead as the verification layer. The core stance: **AI output is untrusted until grounded in the actual code.** Everything below exists to enforce that stance mechanically instead of relying on vigilance.
 
 ## 1. Calibrated confidence labels
 
